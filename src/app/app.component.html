@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-2 col-sm-2 col-md-2  brand-1"><a class="navbar-brand" ><img width="30px" src="assets/tc-course-chapter.svg" /></a></div>
+<div class="col-xs-8 col-sm-8 col-md-8 title"> 
+  <h1>
+    {{title}}
+  </h1>  
+</div>
+<div class="col-xs-2 col-sm-2 col-md-2 brand-2"><a class="navbar-brand" ><img width="25px" src="assets/close.svg"></a></div>
+</div>
+</div>
+
+<div class="row timer">
+  <div class="col-xs-4 col-sm-4 col-md-4 align">
+   <span><img width="30px" src="assets/time-duration.svg" /></span> {{minutes}}:{{seconds}}
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 align">
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 align">
+        <h4>Question:{{questions}}</h4>
+  </div>
+</div>
+<div>
+  <div class="questiontext" [innerHTML]="text"></div>
+</div>
+<div class="msg">Drag and Drop the items below in the correct order</div>
+<div class="row" >
+  <div class="col-lg-offset-4 col-lg-6">
+  <ol class="answerlist" [dragula]='"bag-one"' [dragulaModel]='answerText'>
+  <li *ngFor="let item of answerText"> {{item.name}} <span><i class="fa fa-arrows" aria-hidden="true"></i></span></li>
+  </ol>
+  </div>
+</div>
+<div class="align">
+<button class="btn btn-block submit" (click)="submitted($event)">SUBMIT<img width="35px" src="assets/chevron-right.svg"></button>
+</div>
+
+

@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+@import "~dragula/dist/dragula.css";
+
+.svg-color{
+    fill: white;
+}
+body{
+    background-color: #A9A9D6;
+    font: #4e4e5e;
+    font-weight: 500;
+}
+.container-fluid{
+    background-color: #140940;
+}

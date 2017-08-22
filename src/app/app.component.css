@@ -1,0 +1,74 @@
+
+.title{
+    color: #FFFFFF;
+    text-align: center;
+}
+@media all and (max-width:868px){
+.title h1{
+ font-size: 28px;
+}
+}
+
+.brand-1{
+    border: white solid;
+    border-width: 0 2px 0 0;
+    text-align: center;
+}
+.brand-2{
+      border: white solid;
+    border-width: 0 0 0 2px;
+    text-align: center;
+}
+.align{
+     text-align: center;
+}
+.col-xs-8{
+width: 66.666%;
+}
+.col-xs-2{
+width: 16.666%;
+}
+.timer{
+    background-color: #FFA500;
+}
+.col-xs-4{
+    width: 33.333%
+}
+.answerlist{
+    list-style-type: upper-alpha;
+}
+.answerlist li{
+    height:50px;
+    background-color: white;
+    margin: 10px;
+    padding:10px;
+}
+.answerlist li span{
+    float: right;
+}
+.answerlist li span i{
+    color:grey;
+}
+.questiontext{
+    padding: 10px;
+}
+.msg{
+    font-style: italic;
+    color:grey;
+    padding:10px;
+}
+.submit{
+    font-size: 28px;
+    color: grey;
+}
+.submit img{
+    padding: 0 0 0 10px;
+}
+.count{
+    position: absolute;
+    float: left;
+    width:50px;
+    height: 50px;
+    background: gray;
+    margin: -10px;
+}
